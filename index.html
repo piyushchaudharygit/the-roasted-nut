@@ -244,7 +244,7 @@
               <figure class="floating-food floating-coffee">
                 <div class="media" data-fallback="Cold Coffee">
                   <img
-                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80&auto=format&fit=crop"
+                    src="image/cold-coffee.jpg"
                     alt="Chilled cold coffee with creamy top"
                     loading="lazy" width="400" height="300"
                   >
@@ -291,13 +291,17 @@
 
         <div class="hero-bottom">
           <span>
-            BURGERS &amp; PIZZA
+            PIZZA
             <span aria-hidden="true">&middot;</span>
-            BAKERY
+            BURGERS
             <span aria-hidden="true">&middot;</span>
-            COLD COFFEE
+            SANDWICHES
             <span aria-hidden="true">&middot;</span>
-            CHOCOLATES
+            SAMOSA
+            <span aria-hidden="true">&middot;</span>
+            MAGGI
+            <span aria-hidden="true">&middot;</span>
+            CHAI &amp; COFFEE
           </span>
           <a href="#menu">
             <span aria-hidden="true">🍕</span>
@@ -315,13 +319,13 @@
     <div class="brand-ribbon" aria-hidden="true">
       <div class="container">
         <div class="ribbon-inner">
-          <span>Freshly Baked Every Day</span>
+          <span>Freshly Prepared Every Day</span>
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-sparkle"/></svg>
           <span>Cold Coffee &amp; Chai</span>
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-sparkle"/></svg>
-          <span>Burgers &amp; Pizza</span>
+          <span>Burgers &amp; Pizzas</span>
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><use href="#icon-sparkle"/></svg>
-          <span>Chocolates &amp; Chips</span>
+          <span>Sandwiches &amp; Samosa</span>
         </div>
       </div>
     </div>
@@ -340,18 +344,21 @@
             </p>
             <h2 id="menu-heading">Our <em>Menu</em></h2>
           </div>
-          <p>Burgers, pizza, bakery, cold coffee, chocolates and more — there&rsquo;s something for every craving.</p>
+          <p>Burgers, pizzas, sandwiches, Indian snacks, Maggi and beverages — there&rsquo;s something for every craving.</p>
         </header>
 
         <!-- Category filters -->
         <div class="menu-toolbar">
           <div class="menu-filters" role="group" aria-label="Filter menu by category">
-            <button class="filter-button is-active" data-filter="all"        aria-pressed="true">All</button>
-            <button class="filter-button"           data-filter="fast-food"  aria-pressed="false">Fast Food</button>
-            <button class="filter-button"           data-filter="bakery"     aria-pressed="false">Bakery</button>
-            <button class="filter-button"           data-filter="beverages"  aria-pressed="false">Beverages</button>
-            <button class="filter-button"           data-filter="chocolates" aria-pressed="false">Chocolates</button>
-            <button class="filter-button"           data-filter="chips"      aria-pressed="false">Chips</button>
+            <button class="filter-button is-active" data-filter="all"           aria-pressed="true">All</button>
+            <button class="filter-button"           data-filter="burgers"       aria-pressed="false">Burgers</button>
+            <button class="filter-button"           data-filter="fries-sides"   aria-pressed="false">Fries &amp; Sides</button>
+            <button class="filter-button"           data-filter="sandwiches"    aria-pressed="false">Sandwiches</button>
+            <button class="filter-button"           data-filter="indian-snacks" aria-pressed="false">Indian Snacks &amp; Sweets</button>
+            <button class="filter-button"           data-filter="pizza-8"       aria-pressed="false">Pizza Mania (8&Prime;)</button>
+            <button class="filter-button"           data-filter="pizza-10"      aria-pressed="false">Large Pizza (10&Prime;)</button>
+            <button class="filter-button"           data-filter="maggi"         aria-pressed="false">Maggi Corner</button>
+            <button class="filter-button"           data-filter="beverages"     aria-pressed="false">Beverages</button>
           </div>
           <p class="menu-count" aria-live="polite" id="menu-count"></p>
         </div>
@@ -359,138 +366,140 @@
         <!-- Product grid -->
         <div class="menu-grid" id="menu-grid" role="list">
 
-          <!-- ═══════════════ FAST FOOD ═══════════════ -->
+          <!-- ═══════════════ BURGERS ═══════════════ -->
 
-          <!-- 1. Normal Burger -->
+          <!-- 1. Aloo Tikki Burger -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="normal-burger">
-            <div class="media product-image" data-fallback="Normal Burger">
+                   data-category="burgers" data-product="aloo-tikki-burger">
+            <div class="media product-image" data-fallback="Aloo Tikki Burger">
               <img
                 src="image/Screenshot 2026-09-26 154611.png"
-                alt="Soft veg burger with fresh vegetables and sauce"
+                alt="Crispy aloo tikki patty served in a soft toasted bun with fresh toppings"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Burgers</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Normal Burger</h3>
-              <p class="product-description">Soft bun with a tasty veg filling and fresh toppings.</p>
+              <p class="product-category">Burgers</p>
+              <h3>Aloo Tikki Burger</h3>
+              <p class="product-description">Golden spiced potato patty topped with sliced onion, tomato, and savoury café sauce.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Normal Burger" aria-label="Order Normal Burger">
+                <button class="order-button" data-product-name="Aloo Tikki Burger" aria-label="Order Aloo Tikki Burger">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 2. Cheese Burger -->
+          <!-- 2. Cheese Aloo Tikki Burger -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="cheese-burger">
-            <div class="media product-image" data-fallback="Cheese Burger">
+                   data-category="burgers" data-product="cheese-aloo-tikki-burger">
+            <div class="media product-image" data-fallback="Cheese Aloo Tikki Burger">
               <img
                 src="image/Screenshot 2026-09-26 155417.png"
-                alt="Loaded cheese burger with fresh vegetables and melted cheese"
+                alt="Cheese aloo tikki burger layered with melted cheese and fresh crisp lettuce"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Burgers</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Cheese Burger</h3>
-              <p class="product-description">A veg burger with a generous melted cheesy layer.</p>
+              <p class="product-category">Burgers</p>
+              <h3>Cheese Aloo Tikki Burger</h3>
+              <p class="product-description">Crispy potato patty layered with a slice of melted cheese and special herb mayo.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Cheese Burger" aria-label="Order Cheese Burger">
+                <button class="order-button" data-product-name="Cheese Aloo Tikki Burger" aria-label="Order Cheese Aloo Tikki Burger">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-
-          <!-- 4. Special Pizza -->
+          <!-- 3. Crispy Paneer Burger -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="special-pizza">
-            <div class="media product-image" data-fallback="Special Pizza">
+                   data-category="burgers" data-product="crispy-paneer-burger">
+            <div class="media product-image" data-fallback="Crispy Paneer Burger">
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80&auto=format&fit=crop"
-                alt="Loaded café-style pizza with colourful toppings and melted cheese"
+                src="image/crispy-paneer-burger.jpg"
+                alt="Crispy crumb-fried cottage cheese patty burger with crunchy veggies"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Burgers</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Special Pizza</h3>
-              <p class="product-description">A loaded café-style pizza with all the best toppings.</p>
+              <p class="product-category">Burgers</p>
+              <h3>Crispy Paneer Burger</h3>
+              <p class="product-description">Crispy crumb-coated paneer patty packed with crisp greens and tangy house spread.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Special Pizza" aria-label="Order Special Pizza">
+                <button class="order-button" data-product-name="Crispy Paneer Burger" aria-label="Order Crispy Paneer Burger">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 5. Normal Pizza -->
+
+          <!-- ═══════════════ FRIES & SIDES ═══════════════ -->
+
+          <!-- 4. Salted Fries -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="normal-pizza">
-            <div class="media product-image" data-fallback="Normal Pizza">
+                   data-category="fries-sides" data-product="salted-fries">
+            <div class="media product-image" data-fallback="Salted Fries">
               <img
-                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80&auto=format&fit=crop"
-                alt="Classic regular pizza with cheese and sauce"
+                src="image/Screenshot 2026-09-26 155729.png"
+                alt="Golden crisp salted french fries served hot"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Fries & Sides</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Normal Pizza</h3>
-              <p class="product-description">A simple, classic pizza done just right.</p>
+              <p class="product-category">Fries & Sides</p>
+              <h3>Salted Fries</h3>
+              <p class="product-description">Deep-fried crispy potato batons lightly tossed with sea salt.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Normal Pizza" aria-label="Order Normal Pizza">
+                <button class="order-button" data-product-name="Salted Fries" aria-label="Order Salted Fries">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 6. Corn Pizza -->
+          <!-- 5. Peri Peri Fries -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="corn-pizza">
-            <div class="media product-image" data-fallback="Corn Pizza">
+                   data-category="fries-sides" data-product="peri-peri-fries">
+            <div class="media product-image" data-fallback="Peri Peri Fries">
               <img
-                src="image/Screenshot 2026-09-26 155538.png"
-                alt="Golden baked pizza topped generously with sweet corn and melted cheese"
+                src="image/peri-peri-fries.jpg"
+                alt="Crisp fries tossed in spicy peri peri seasoning"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Fries & Sides</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Corn Pizza</h3>
-              <p class="product-description">Pizza topped with sweet corn and melted cheese.</p>
+              <p class="product-category">Fries & Sides</p>
+              <h3>Peri Peri Fries</h3>
+              <p class="product-description">Golden fries generously dusted with spicy, tangy African bird's eye peri-peri seasoning.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Corn Pizza" aria-label="Order Corn Pizza">
+                <button class="order-button" data-product-name="Peri Peri Fries" aria-label="Order Peri Peri Fries">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 7. Garlic Bread -->
+          <!-- 6. Garlic Bread -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="garlic-bread">
+                   data-category="fries-sides" data-product="garlic-bread">
             <div class="media product-image" data-fallback="Garlic Bread">
               <img
                 src="image/garlic-bread.jpg"
-                alt="Crispy golden garlic bread slices with herbs"
+                alt="Oven-toasted French baguette slices infused with garlic butter and herbs"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Fries & Sides</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
+              <p class="product-category">Fries & Sides</p>
               <h3>Garlic Bread</h3>
-              <p class="product-description">Toasted bread with a warm garlic-herb flavour.</p>
+              <p class="product-description">Warm toasted baguette slices brushed with fragrant garlic butter and aromatic herbs.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
                 <button class="order-button" data-product-name="Garlic Bread" aria-label="Order Garlic Bread">
@@ -500,553 +509,623 @@
             </div>
           </article>
 
-          <!-- 8. Maggi -->
+          <!-- 7. Cheese Garlic Bread -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="maggi">
-            <div class="media product-image" data-fallback="Masala Maggi">
+                   data-category="fries-sides" data-product="cheese-garlic-bread">
+            <div class="media product-image" data-fallback="Cheese Garlic Bread">
+              <img
+                src="image/cheese-garlic-bread.jpg"
+                alt="Toasted garlic bread blanketed in melted mozzarella cheese"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Fries & Sides</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Fries & Sides</p>
+              <h3>Cheese Garlic Bread</h3>
+              <p class="product-description">Oven-baked crusty bread topped with garlic butter and golden bubbling mozzarella cheese.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Cheese Garlic Bread" aria-label="Order Cheese Garlic Bread">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════ SANDWICHES ═══════════════ -->
+
+          <!-- 8. Plain Aloo Sandwich -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="sandwiches" data-product="plain-aloo-sandwich">
+            <div class="media product-image" data-fallback="Plain Aloo Sandwich">
+              <img
+                src="image/plain-aloo-sandwich.jpg"
+                alt="Comforting toasted sandwich stuffed with spiced mashed potato filling"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Sandwiches</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Sandwiches</p>
+              <h3>Plain Aloo Sandwich</h3>
+              <p class="product-description">Homestyle sandwich stuffed with savoury spiced potato mash and mint chutney.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Plain Aloo Sandwich" aria-label="Order Plain Aloo Sandwich">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Paneer Tikka Sandwich -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="sandwiches" data-product="paneer-tikka-sandwich">
+            <div class="media product-image" data-fallback="Paneer Tikka Sandwich">
+              <img
+                src="image/paneer-tikka-sandwich.jpg"
+                alt="Grilled sandwich filled with marinated paneer tikka chunks and bell peppers"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Sandwiches</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Sandwiches</p>
+              <h3>Paneer Tikka Sandwich</h3>
+              <p class="product-description">Juicy tandoori-marinated cottage cheese cubes grilled with crunchy capsicum and onions.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Paneer Tikka Sandwich" aria-label="Order Paneer Tikka Sandwich">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10. Grilled Veg Sandwich -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="sandwiches" data-product="grilled-veg-sandwich">
+            <div class="media product-image" data-fallback="Grilled Veg Sandwich">
+              <img
+                src="image/grilled-veg-sandwich.jpg"
+                alt="Golden grilled sandwich packed with sliced fresh garden vegetables"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Sandwiches</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Sandwiches</p>
+              <h3>Grilled Veg Sandwich</h3>
+              <p class="product-description">Crispy grill-pressed bread packed with cucumber, tomato, capsicum, and house seasoning.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Grilled Veg Sandwich" aria-label="Order Grilled Veg Sandwich">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Cheese Sandwich -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="sandwiches" data-product="cheese-sandwich">
+            <div class="media product-image" data-fallback="Cheese Sandwich">
+              <img
+                src="image/cheese-sandwich.jpg"
+                alt="Golden toasted sandwich oozing with melted cheese"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Sandwiches</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Sandwiches</p>
+              <h3>Cheese Sandwich</h3>
+              <p class="product-description">Warm toasted bread loaded with melted cheese and a sprinkle of cracked black pepper.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Cheese Sandwich" aria-label="Order Cheese Sandwich">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Diet Protein Sandwich -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="sandwiches" data-product="diet-protein-sandwich">
+            <div class="media product-image" data-fallback="Diet Protein Sandwich">
+              <img
+                src="image/diet-protein-sandwich.jpg"
+                alt="Healthy high-protein sandwich filled with fresh sprouts, paneer, and greens"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Sandwiches</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Sandwiches</p>
+              <h3>Diet Protein Sandwich</h3>
+              <p class="product-description">Nutrient-dense wholesome sandwich packed with fresh paneer, sprouts, cucumbers, and greens.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Diet Protein Sandwich" aria-label="Order Diet Protein Sandwich">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════ INDIAN SNACKS & SWEETS ═══════════════ -->
+
+          <!-- 13. Aloo Samosa -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="aloo-samosa">
+            <div class="media product-image" data-fallback="Aloo Samosa">
+              <img
+                src="image/aloo-samosa.jpg"
+                alt="Crispy flaky pastry triangle filled with spiced potatoes and green peas"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Aloo Samosa</h3>
+              <p class="product-description">Crispy, golden-fried flaky pastry cone packed with cumin-spiced potatoes and peas.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Aloo Samosa" aria-label="Order Aloo Samosa">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 14. Paneer Chili Samosa -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="paneer-chili-samosa">
+            <div class="media product-image" data-fallback="Paneer Chili Samosa">
+              <img
+                src="image/paneer-chili-samosa.jpg"
+                alt="Spicy samosa filled with paneer chili Indo-Chinese stuffing"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Paneer Chili Samosa</h3>
+              <p class="product-description">Crisp pastry packed with a zesty fusion filling of spiced paneer, onions, and green chilies.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Paneer Chili Samosa" aria-label="Order Paneer Chili Samosa">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Chole Samosa -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="chole-samosa">
+            <div class="media product-image" data-fallback="Chole Samosa">
+              <img
+                src="image/chole-samosa.jpg"
+                alt="Hot samosa crushed and topped with tangy chickpea curry, chutneys, and sev"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Chole Samosa</h3>
+              <p class="product-description">Crispy samosa crushed and smothered in rich Punjabi chole curry, sweet tamarind, and mint chutney.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Chole Samosa" aria-label="Order Chole Samosa">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16. Chole Aloo Khasta -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="chole-aloo-khasta">
+            <div class="media product-image" data-fallback="Chole Aloo Khasta">
+              <img
+                src="image/chole-aloo-khasta.jpg"
+                alt="Crispy khasta kachori served with spicy chole and aloo curry"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Chole Aloo Khasta</h3>
+              <p class="product-description">Flaky spiced khasta kachori paired with slow-simmered chole and tangy potato gravy.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Chole Aloo Khasta" aria-label="Order Chole Aloo Khasta">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. Poori Sabji -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="poori-sabji">
+            <div class="media product-image" data-fallback="Poori Sabji">
+              <img
+                src="image/poori-sabji.jpg"
+                alt="Puffed golden pooris served with steaming spicy potato curry and pickle"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Poori Sabji</h3>
+              <p class="product-description">Piping hot puffed wheat pooris served with traditional spiced aloo rasedar gravy.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Poori Sabji" aria-label="Order Poori Sabji">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 18. Jalebi -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="indian-snacks" data-product="jalebi">
+            <div class="media product-image" data-fallback="Jalebi">
+              <img
+                src="image/jalebi.jpg"
+                alt="Crispy saffron-coloured spiral jalebis soaked in hot cardamom sugar syrup"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Indian Snacks & Sweets</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Indian Snacks & Sweets</p>
+              <h3>Jalebi</h3>
+              <p class="product-description">Crispy golden swirls fried fresh and soaked in aromatic saffron-cardamom sugar syrup.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Jalebi" aria-label="Order Jalebi">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════ PIZZA MANIA (8") ═══════════════ -->
+
+          <!-- 19. Margherita Pizza (8") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-8" data-product="margherita-pizza-8">
+            <div class="media product-image" data-fallback="Margherita Pizza (8&quot;)">
+              <img
+                src="image/margherita-pizza.jpg"
+                alt="8 inch classic margherita pizza topped with mozzarella and rich tomato sauce"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Pizza Mania (8")</span>
+              <span class="product-size-badge">8" Medium</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Pizza Mania (8")</p>
+              <h3>Margherita Pizza (8")</h3>
+              <p class="product-description">Classic single-crust 8" pizza layered with San Marzano style tomato sauce and melted mozzarella.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Margherita Pizza (8&quot;)" aria-label="Order Margherita Pizza (8&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Veggie Pizza (8") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-8" data-product="veggie-pizza-8">
+            <div class="media product-image" data-fallback="Veggie Pizza (8&quot;)">
+              <img
+                src="image/veggie-pizza.jpg"
+                alt="8 inch garden veggie pizza loaded with capsicum, onion, and juicy tomatoes"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Pizza Mania (8")</span>
+              <span class="product-size-badge">8" Medium</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Pizza Mania (8")</p>
+              <h3>Veggie Pizza (8")</h3>
+              <p class="product-description">8" crust loaded with crunchy bell peppers, onions, tomatoes, and stretchy mozzarella.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Veggie Pizza (8&quot;)" aria-label="Order Veggie Pizza (8&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 21. Corn Cheese Pizza (8") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-8" data-product="corn-cheese-pizza-8">
+            <div class="media product-image" data-fallback="Corn Cheese Pizza (8&quot;)">
+              <img
+                src="image/Screenshot 2026-09-26 155538.png"
+                alt="8 inch sweet corn pizza generously blanketed with melted mozzarella cheese"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Pizza Mania (8")</span>
+              <span class="product-size-badge">8" Medium</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Pizza Mania (8")</p>
+              <h3>Corn Cheese Pizza (8")</h3>
+              <p class="product-description">Sweet golden American corn kernels smothered with a double layer of melted mozzarella cheese.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Corn Cheese Pizza (8&quot;)" aria-label="Order Corn Cheese Pizza (8&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 22. Paneer Pizza (8") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-8" data-product="paneer-pizza-8">
+            <div class="media product-image" data-fallback="Paneer Pizza (8&quot;)">
+              <img
+                src="image/paneer-pizza.jpg"
+                alt="8 inch pizza loaded with spiced paneer cubes, onions, and herbs"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Pizza Mania (8")</span>
+              <span class="product-size-badge">8" Medium</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Pizza Mania (8")</p>
+              <h3>Paneer Pizza (8")</h3>
+              <p class="product-description">Marinated spiced cottage cheese chunks baked with onions, capsicum, and aromatic Italian herbs.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Paneer Pizza (8&quot;)" aria-label="Order Paneer Pizza (8&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 23. Veg Loaded Special Pizza (8") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-8" data-product="veg-loaded-special-pizza-8">
+            <div class="media product-image" data-fallback="Veg Loaded Special Pizza (8&quot;)">
+              <img
+                src="image/veg-loaded-pizza.jpg"
+                alt="8 inch special supreme pizza loaded with paneer, olives, corn, and fresh veggies"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Pizza Mania (8")</span>
+              <span class="product-size-badge">8" Medium</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Pizza Mania (8")</p>
+              <h3>Veg Loaded Special Pizza (8")</h3>
+              <p class="product-description">Our signature loaded 8" pizza with paneer, sweet corn, black olives, bell peppers, and extra cheese.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Veg Loaded Special Pizza (8&quot;)" aria-label="Order Veg Loaded Special Pizza (8&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════ LARGE PIZZA (10") ═══════════════ -->
+
+          <!-- 24. Margherita Pizza (10") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-10" data-product="margherita-pizza-10">
+            <div class="media product-image" data-fallback="Margherita Pizza (10&quot;)">
+              <img
+                src="image/margherita-pizza.jpg"
+                alt="10 inch large margherita pizza with generous mozzarella and herb tomato base"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Large Pizza (10")</span>
+              <span class="product-size-badge">10" Large</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Large Pizza (10")</p>
+              <h3>Margherita Pizza (10")</h3>
+              <p class="product-description">Large 10" crust covered in rich herbed tomato sauce and a generous blanket of molten mozzarella.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Margherita Pizza (10&quot;)" aria-label="Order Margherita Pizza (10&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 25. Veggie Pizza (10") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-10" data-product="veggie-pizza-10">
+            <div class="media product-image" data-fallback="Veggie Pizza (10&quot;)">
+              <img
+                src="image/veggie-pizza.jpg"
+                alt="10 inch large garden veggie pizza topped with fresh capsicum, onion, and tomatoes"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Large Pizza (10")</span>
+              <span class="product-size-badge">10" Large</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Large Pizza (10")</p>
+              <h3>Veggie Pizza (10")</h3>
+              <p class="product-description">Large 10" hand-stretched pizza generously topped with farm-fresh peppers, red onions, and ripe tomatoes.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Veggie Pizza (10&quot;)" aria-label="Order Veggie Pizza (10&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 26. Corn Cheese Pizza (10") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-10" data-product="corn-cheese-pizza-10">
+            <div class="media product-image" data-fallback="Corn Cheese Pizza (10&quot;)">
+              <img
+                src="image/Screenshot 2026-09-26 155538.png"
+                alt="10 inch large sweet corn and gooey cheese pizza"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Large Pizza (10")</span>
+              <span class="product-size-badge">10" Large</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Large Pizza (10")</p>
+              <h3>Corn Cheese Pizza (10")</h3>
+              <p class="product-description">Large 10" pizza blanketed in sweet golden corn kernels and generous golden bubbling cheese.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Corn Cheese Pizza (10&quot;)" aria-label="Order Corn Cheese Pizza (10&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 27. Paneer Pizza (10") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-10" data-product="paneer-pizza-10">
+            <div class="media product-image" data-fallback="Paneer Pizza (10&quot;)">
+              <img
+                src="image/paneer-pizza.jpg"
+                alt="10 inch large paneer pizza with marinated cottage cheese, bell peppers, and cheese"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Large Pizza (10")</span>
+              <span class="product-size-badge">10" Large</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Large Pizza (10")</p>
+              <h3>Paneer Pizza (10")</h3>
+              <p class="product-description">Large 10" pizza loaded with flavourful marinated cottage cheese cubes, crisp onions, and herbs.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Paneer Pizza (10&quot;)" aria-label="Order Paneer Pizza (10&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 28. Veg Loaded Special Pizza (10") -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="pizza-10" data-product="veg-loaded-special-pizza-10">
+            <div class="media product-image" data-fallback="Veg Loaded Special Pizza (10&quot;)">
+              <img
+                src="image/veg-loaded-pizza.jpg"
+                alt="10 inch large deluxe chef special pizza loaded with all premium toppings"
+                loading="lazy" width="600" height="400">
+              <span class="product-image-label">Large Pizza (10")</span>
+              <span class="product-size-badge">10" Large</span>
+            </div>
+            <div class="product-body">
+              <p class="product-category">Large Pizza (10")</p>
+              <h3>Veg Loaded Special Pizza (10")</h3>
+              <p class="product-description">Our grand 10" feast loaded with paneer, sweet corn, black olives, jalapeños, peppers, and double cheese.</p>
+              <div class="product-bottom">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Veg Loaded Special Pizza (10&quot;)" aria-label="Order Veg Loaded Special Pizza (10&quot;)">
+                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ═══════════════ MAGGI CORNER ═══════════════ -->
+
+          <!-- 29. Classic Maggi -->
+          <article class="product-card reveal-ready" role="listitem"
+                   data-category="maggi" data-product="classic-maggi">
+            <div class="media product-image" data-fallback="Classic Maggi">
               <img
                 src="image/Screenshot 2026-09-26 155635.png"
-                alt="Flavourful masala Maggi noodles cooked with vegetables"
+                alt="Steaming bowl of 2-minute classic masala Maggi noodles"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Maggi Corner</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Maggi</h3>
-              <p class="product-description">Classic hot Maggi noodles with our special masala twist.</p>
+              <p class="product-category">Maggi Corner</p>
+              <h3>Classic Maggi</h3>
+              <p class="product-description">The timeless favourite 2-minute masala Maggi cooked hot with authentic aromatic spices.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Maggi" aria-label="Order Maggi">
+                <button class="order-button" data-product-name="Classic Maggi" aria-label="Order Classic Maggi">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 9. French Fries -->
+          <!-- 30. Butter Maggi -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="french-fries">
-            <div class="media product-image" data-fallback="French Fries">
+                   data-category="maggi" data-product="butter-maggi">
+            <div class="media product-image" data-fallback="Butter Maggi">
               <img
-                src="image/Screenshot 2026-09-26 155729.png"
-                alt="Crispy golden french fries with sea salt, served hot"
+                src="image/butter-maggi.jpg"
+                alt="Rich butter Maggi noodles cooked with a dollop of creamy dairy butter"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Maggi Corner</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>French Fries</h3>
-              <p class="product-description">Crispy golden fries, perfectly salted and served hot.</p>
+              <p class="product-category">Maggi Corner</p>
+              <h3>Butter Maggi</h3>
+              <p class="product-description">Classic noodles cooked to perfection and enriched with a generous melt of creamy dairy butter.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="French Fries" aria-label="Order French Fries">
+                <button class="order-button" data-product-name="Butter Maggi" aria-label="Order Butter Maggi">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 10. Peri-Peri Fries -->
+          <!-- 31. Cheese Maggi -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="peri-peri-fries">
-            <div class="media product-image" data-fallback="Peri-Peri Fries">
+                   data-category="maggi" data-product="cheese-maggi">
+            <div class="media product-image" data-fallback="Cheese Maggi">
               <img
-                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80&auto=format&fit=crop"
-                alt="Crispy fries dusted with peri-peri spice blend"
+                src="image/cheese-maggi.jpg"
+                alt="Gooey cheese Maggi noodles topped with grated mozzarella cheese"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
+              <span class="product-image-label">Maggi Corner</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Peri-Peri Fries</h3>
-              <p class="product-description">Crispy fries with our house peri-peri seasoning — a spicy kick.</p>
+              <p class="product-category">Maggi Corner</p>
+              <h3>Cheese Maggi</h3>
+              <p class="product-description">Hot masala noodles blanketed in creamy melted mozzarella for the ultimate comfort bowl.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Peri-Peri Fries" aria-label="Order Peri-Peri Fries">
+                <button class="order-button" data-product-name="Cheese Maggi" aria-label="Order Cheese Maggi">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 11. Grilled Sandwich -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="grilled-sandwich">
-            <div class="media product-image" data-fallback="Grilled Sandwich">
-              <img
-                src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80&auto=format&fit=crop"
-                alt="Hot grilled sandwich with golden toasted bread and savoury filling"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Grilled Sandwich</h3>
-              <p class="product-description">A hot grilled sandwich with a delicious savoury filling.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Grilled Sandwich" aria-label="Order Grilled Sandwich">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 12. Noodles -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="noodles">
-            <div class="media product-image" data-fallback="Noodles">
-              <img
-                src="image/Screenshot 2026-09-26 155809.png"
-                alt="Wok-tossed noodles with colourful bell peppers and scallions"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Noodles</h3>
-              <p class="product-description">Hot café-style noodles tossed with veggies and seasoning.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Noodles" aria-label="Order Noodles">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 13. Momos -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="momos">
-            <div class="media product-image" data-fallback="Momos">
-              <img
-                src="image/Screenshot 2026-09-26 155846.png"
-                alt="Steamed momos served hot with spicy red chutney dip"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Momos</h3>
-              <p class="product-description">Steamed momos served as a satisfying quick bite.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Momos" aria-label="Order Momos">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 14. Spring Roll -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="spring-roll">
-            <div class="media product-image" data-fallback="Spring Roll">
-              <img
-                src="image/Screenshot 2026-09-26 160100.png"
-                alt="Crispy golden spring rolls served with sweet chilli dipping sauce"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Spring Roll</h3>
-              <p class="product-description">Crispy rolls with a warm savoury vegetable filling inside.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Spring Roll" aria-label="Order Spring Roll">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 15. Fried Rice -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="fried-rice">
-            <div class="media product-image" data-fallback="Fried Rice">
-              <img
-                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&q=80&auto=format&fit=crop"
-                alt="Flavourful café-style fried rice with vegetables"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Fried Rice</h3>
-              <p class="product-description">Flavourful café-style fried rice with fresh vegetables.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Fried Rice" aria-label="Order Fried Rice">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 16. Chili Potatoes -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="chili-potatoes">
-            <div class="media product-image" data-fallback="Chili Potatoes">
-              <img
-                src="image/chili-potatoes.png"
-                alt="Crispy potato wedges tossed in spicy chilli sauce with bell peppers"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Chili Potatoes</h3>
-              <p class="product-description">Crispy potatoes tossed in a bold chilli-style sauce.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Chili Potatoes" aria-label="Order Chili Potatoes">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 17. Kurkure Momos -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="kurkure-momos">
-            <div class="media product-image" data-fallback="Kurkure Momos">
-              <img
-                src="image/Screenshot 2026-09-26 160231.png"
-                alt="Super crunchy kurkure-crusted fried momos with dips"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Kurkure Momos</h3>
-              <p class="product-description">Crunchy crispy momos — a fun twist on the classic.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Kurkure Momos" aria-label="Order Kurkure Momos">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 18. Paneer Chili -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="paneer-chili">
-            <div class="media product-image" data-fallback="Paneer Chili">
-              <img
-                src="image/Screenshot 2026-09-26 160325.png"
-                alt="Paneer cubes tossed in rich spicy chilli sauce with peppers and sesame seeds"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Paneer Chili</h3>
-              <p class="product-description">Paneer cubes tossed in a spicy chilli-style preparation.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Paneer Chili" aria-label="Order Paneer Chili">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 19. Pav Bhaji -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="fast-food" data-product="pav-bhaji">
-            <div class="media product-image" data-fallback="Pav Bhaji">
-              <img
-                src="image/Screenshot 2026-09-26 160403.png"
-                alt="Buttery toasted pav served with richly spiced hot bhaji, onion rings, and lemon"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Fast Food</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Fast Food</p>
-              <h3>Pav Bhaji</h3>
-              <p class="product-description">Classic pav served with a richly spiced and buttery bhaji.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Pav Bhaji" aria-label="Order Pav Bhaji">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- ═══════════════ BAKERY – CAKES ═══════════════ -->
-
-          <!-- 1. Strawberry Cake -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="strawberry-cake">
-            <div class="media product-image" data-fallback="Strawberry Cake">
-              <img
-                src="image/Screenshot 2026-09-26 160607.png"
-                alt="Freshly baked strawberry cake with cream and strawberry topping"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Strawberry Cake</h3>
-              <p class="product-description">Light sponge cake with fresh strawberry cream and topping.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Strawberry Cake" aria-label="Order Strawberry Cake">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 2. Blueberry Cake -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="blueberry-cake">
-            <div class="media product-image" data-fallback="Blueberry Cake">
-              <img
-                src="image/Screenshot 2026-09-26 160638.png"
-                alt="Soft blueberry cake with rich berry glaze, fresh berries, and chocolate garnish"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Blueberry Cake</h3>
-              <p class="product-description">Soft sponge cake with a blueberry-flavoured cream topping.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Blueberry Cake" aria-label="Order Blueberry Cake">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 3. Chocolate Cake -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="chocolate-cake">
-            <div class="media product-image" data-fallback="Chocolate Cake">
-              <img
-                src="image/Screenshot 2026-09-26 221101.png"
-                alt="Decadent chocolate drip cake with piped frosting rosettes and chocolate shard"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Chocolate Cake</h3>
-              <p class="product-description">Rich and decadent chocolate cake with ganache frosting.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Chocolate Cake" aria-label="Order Chocolate Cake">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 4. Black Forest Cake -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="black-forest-cake">
-            <div class="media product-image" data-fallback="Black Forest Cake">
-              <img
-                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80&auto=format&fit=crop"
-                alt="Classic Black Forest cake with cherries and whipped cream"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Black Forest Cake</h3>
-              <p class="product-description">Classic Black Forest with cherries, cream, and dark chocolate.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Black Forest Cake" aria-label="Order Black Forest Cake">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 5. Pineapple Cake -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="pineapple-cake">
-            <div class="media product-image" data-fallback="Pineapple Cake">
-              <img
-                src="image/Screenshot 2026-09-26 160846.png"
-                alt="Fresh pineapple cake with rich cream, pineapple glaze, and toasted almond flakes"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Pineapple Cake</h3>
-              <p class="product-description">Light and airy pineapple-flavoured sponge with cream.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Pineapple Cake" aria-label="Order Pineapple Cake">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 6. Pastry -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="pastry">
-            <div class="media product-image" data-fallback="Café Pastry">
-              <img
-                src="image/Screenshot 2026-09-26 161003.png"
-                alt="Assorted fresh pastries including red velvet, chocolate truffle, and pineapple"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Pastry</h3>
-              <p class="product-description">A soft small cake-style pastry — the perfect sweet bite.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Pastry" aria-label="Order Pastry">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 7. Samosa -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="samosa">
-            <div class="media product-image" data-fallback="Samosa">
-              <img
-                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80&auto=format&fit=crop"
-                alt="Crisp golden samosa filled with spiced potato and peas"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Snacks</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery &amp; Snacks</p>
-              <h3>Samosa</h3>
-              <p class="product-description">Crispy golden crust filled with delicious spiced potatoes and peas.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Samosa" aria-label="Order Samosa">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 8. Aloo Patties -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="aloo-patties">
-            <div class="media product-image" data-fallback="Aloo Patties">
-              <img
-                src="image/Screenshot 2026-09-26 161135.png"
-                alt="Crisp and flaky golden puff patties filled with seasoned potato"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Aloo Patties</h3>
-              <p class="product-description">Flaky golden bakery patties filled with seasoned mashed potatoes.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Aloo Patties" aria-label="Order Aloo Patties">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 9. Paneer Patties -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="paneer-patties">
-            <div class="media product-image" data-fallback="Paneer Patties">
-              <img
-                src="image/Screenshot 2026-09-26 161204.png"
-                alt="Flaky puff pastry patties topped with freshly grated spiced paneer"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Paneer Patties</h3>
-              <p class="product-description">Crisp maida patties filled with lightly spiced fresh paneer.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Paneer Patties" aria-label="Order Paneer Patties">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 9. Donuts -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="bakery" data-product="donuts">
-            <div class="media product-image" data-fallback="Donuts">
-              <img
-                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80&auto=format&fit=crop"
-                alt="Soft sweet café-style glazed donuts"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Bakery</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Bakery</p>
-              <h3>Donuts</h3>
-              <p class="product-description">Soft, sweet café-style donuts with a glazed finish.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Donuts" aria-label="Order Donuts">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
 
           <!-- ═══════════════ BEVERAGES ═══════════════ -->
 
-          <!-- 1. Cold Coffee -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="beverages" data-product="cold-coffee">
-            <div class="media product-image" data-fallback="Cold Coffee">
-              <img
-                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&auto=format&fit=crop"
-                alt="Chilled cold coffee in a branded café paper cup with creamy top"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Beverages</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Beverages</p>
-              <h3>Cold Coffee</h3>
-              <p class="product-description">Rich, chilled, and creamy — our cold coffee is simply irresistible.</p>
-              <div class="product-bottom">
-                <span class="price">&#8377;___</span>
-                <button class="order-button" data-product-name="Cold Coffee" aria-label="Order Cold Coffee">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 2. Chai -->
+          <!-- 32. Chai -->
           <article class="product-card reveal-ready" role="listitem"
                    data-category="beverages" data-product="chai">
-            <div class="media product-image" data-fallback="Masala Chai">
+            <div class="media product-image" data-fallback="Chai">
               <img
-                src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=600&q=80&auto=format&fit=crop"
-                alt="Freshly brewed hot masala chai tea in a glass"
+                src="image/chai.jpg"
+                alt="Steaming cup of Indian spiced milk chai with ginger and cardamom"
                 loading="lazy" width="600" height="400">
               <span class="product-image-label">Beverages</span>
             </div>
             <div class="product-body">
               <p class="product-category">Beverages</p>
               <h3>Chai</h3>
-              <p class="product-description">Freshly brewed hot tea — warm, comforting, and perfect.</p>
+              <p class="product-description">Traditional freshly brewed Indian milk tea infused with crushed ginger and aromatic cardamom.</p>
               <div class="product-bottom">
                 <span class="price">&#8377;___</span>
                 <button class="order-button" data-product-name="Chai" aria-label="Order Chai">
@@ -1056,142 +1135,92 @@
             </div>
           </article>
 
-          <!-- 3. Cold Drinks -->
+          <!-- 33. Kulhad Chai -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="beverages" data-product="cold-drinks">
-            <div class="media product-image" data-fallback="Cold Drinks">
+                   data-category="beverages" data-product="kulhad-chai">
+            <div class="media product-image" data-fallback="Kulhad Chai">
               <img
-                src="https://images.unsplash.com/photo-1527960471264-932f39eb5846?w=600&q=80&auto=format&fit=crop"
-                alt="Assorted cold drinks and sodas in glass bottles"
+                src="image/kulhad-chai.jpg"
+                alt="Earthy kulhad clay cup chai served piping hot"
                 loading="lazy" width="600" height="400">
               <span class="product-image-label">Beverages</span>
             </div>
             <div class="product-body">
               <p class="product-category">Beverages</p>
-              <h3>Cold Drinks</h3>
-              <p class="product-description">All your favourite cold drinks — always available at MRP, no markups.</p>
+              <h3>Kulhad Chai</h3>
+              <p class="product-description">Rich, slow-brewed spiced tea served in a traditional baked clay kulhad for an earthy aroma.</p>
               <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Cold Drinks" aria-label="Order Cold Drinks">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Kulhad Chai" aria-label="Order Kulhad Chai">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- ═══════════════ CHOCOLATES ═══════════════ -->
-
-          <!-- 1. Dairy Milk -->
+          <!-- 34. Hot Coffee -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="chocolates" data-product="dairy-milk">
-            <div class="media product-image" data-fallback="Dairy Milk Chocolate">
+                   data-category="beverages" data-product="hot-coffee">
+            <div class="media product-image" data-fallback="Hot Coffee">
               <img
-                src="image/Screenshot 2026-09-26 161249.png"
-                alt="Cadbury Dairy Milk Silk chocolate bars tied with red gift ribbon"
+                src="image/hot-coffee.jpg"
+                alt="Freshly frothed creamy hot café coffee served in a warm mug"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Chocolates</span>
+              <span class="product-image-label">Beverages</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Chocolates</p>
-              <h3>Dairy Milk</h3>
-              <p class="product-description">Smooth, creamy Dairy Milk chocolate — a classic favourite.</p>
+              <p class="product-category">Beverages</p>
+              <h3>Hot Coffee</h3>
+              <p class="product-description">Smooth, aromatic roasted coffee whipped and brewed with hot milk and silky micro-foam.</p>
               <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Dairy Milk" aria-label="Order Dairy Milk">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Hot Coffee" aria-label="Order Hot Coffee">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 2. Kit Kat -->
+          <!-- 35. Cold Coffee -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="chocolates" data-product="kit-kat">
-            <div class="media product-image" data-fallback="Kit Kat">
+                   data-category="beverages" data-product="cold-coffee">
+            <div class="media product-image" data-fallback="Cold Coffee">
               <img
-                src="image/Screenshot 2026-09-26 161315.png"
-                alt="Kit Kat chocolate wafer bars — crispy and chocolatey break"
+                src="image/cold-coffee.jpg"
+                alt="Chilled blended cold coffee served with chocolate drizzle"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Chocolates</span>
+              <span class="product-image-label">Beverages</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Chocolates</p>
-              <h3>Kit Kat</h3>
-              <p class="product-description">Crispy chocolate wafer bars — always a good break.</p>
+              <p class="product-category">Beverages</p>
+              <h3>Cold Coffee</h3>
+              <p class="product-description">Our signature velvety blended cold coffee served chilled with a swirl of chocolate drizzle.</p>
               <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Kit Kat" aria-label="Order Kit Kat">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Cold Coffee" aria-label="Order Cold Coffee">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
             </div>
           </article>
 
-          <!-- 3. Amul Zero Sugar Dark Chocolate -->
+          <!-- 36. Cold Coffee (Ice Cream) -->
           <article class="product-card reveal-ready" role="listitem"
-                   data-category="chocolates" data-product="amul-dark-chocolate">
-            <div class="media product-image" data-fallback="Dark Chocolate">
+                   data-category="beverages" data-product="cold-coffee-icecream">
+            <div class="media product-image" data-fallback="Cold Coffee (Ice Cream)">
               <img
-                src="image/Screenshot 2026-09-26 161349.png"
-                alt="Rich Amul Dark Chocolate bars including Sugar Free and Fruit 'N' Nut variants"
+                src="image/cold-coffee-icecream.jpg"
+                alt="Indulgent thick cold coffee topped with a generous scoop of vanilla ice cream"
                 loading="lazy" width="600" height="400">
-              <span class="product-image-label">Chocolates</span>
+              <span class="product-image-label">Beverages</span>
             </div>
             <div class="product-body">
-              <p class="product-category">Chocolates</p>
-              <h3>Amul Dark Chocolate</h3>
-              <p class="product-description">Amul rich dark chocolate — 55% cocoa, sugar-free and fruit 'n' nut options.</p>
+              <p class="product-category">Beverages</p>
+              <h3>Cold Coffee (Ice Cream)</h3>
+              <p class="product-description">Thick decadent cold coffee crowned with a luscious scoop of creamy vanilla ice cream.</p>
               <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Amul Dark Chocolate" aria-label="Order Amul Dark Chocolate">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- ═══════════════ CHIPS ═══════════════ -->
-
-          <!-- 1. Kurkure -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="chips" data-product="kurkure">
-            <div class="media product-image" data-fallback="Kurkure">
-              <img
-                src="image/Screenshot 2026-09-26 161423.png"
-                alt="Kurkure — crispy and tangy packaged snack"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Chips</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Chips</p>
-              <h3>Kurkure</h3>
-              <p class="product-description">Crispy, tangy Kurkure — your favourite packaged snack.</p>
-              <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Kurkure" aria-label="Order Kurkure">
-                  <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- 2. Chips -->
-          <article class="product-card reveal-ready" role="listitem"
-                   data-category="chips" data-product="chips">
-            <div class="media product-image" data-fallback="Chips">
-              <img
-                src="image/Screenshot 2026-09-26 161501.png"
-                alt="Assorted Lay's potato chips in delicious popular flavours"
-                loading="lazy" width="600" height="400">
-              <span class="product-image-label">Chips</span>
-            </div>
-            <div class="product-body">
-              <p class="product-category">Chips</p>
-              <h3>Chips</h3>
-              <p class="product-description">Crispy potato chips in classic salted, cream &amp; onion, and tangy flavours.</p>
-              <div class="product-bottom">
-                <span class="price">At MRP</span>
-                <button class="order-button" data-product-name="Chips" aria-label="Order Chips">
+                <span class="price">&#8377;___</span>
+                <button class="order-button" data-product-name="Cold Coffee (Ice Cream)" aria-label="Order Cold Coffee (Ice Cream)">
                   <svg class="icon" aria-hidden="true"><use href="#icon-bag"/></svg>Order Now
                 </button>
               </div>
@@ -1202,7 +1231,7 @@
 
         <p class="menu-disclaimer">
           Prices marked <strong>&#8377;___</strong> will be updated once finalised.
-          Chocolates, chips, and cold drinks are sold at MRP.
+          Please ask at the counter or contact us on WhatsApp for daily specials and current pricing.
         </p>
 
       </div>
@@ -1229,7 +1258,7 @@
           <article class="favourite-card reveal-ready" data-tilt>
             <div class="media favourite-image" data-fallback="Cold Coffee">
               <img
-                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80&auto=format&fit=crop"
+                src="image/cold-coffee.jpg"
                 alt="Chilled cold coffee — our bestselling drink"
                 loading="lazy" width="800" height="600">
             </div>
@@ -1246,95 +1275,95 @@
           </article>
 
           <article class="favourite-card reveal-ready" data-tilt>
-            <div class="media favourite-image" data-fallback="Special Pizza">
+            <div class="media favourite-image" data-fallback="Veg Loaded Special Pizza">
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80&auto=format&fit=crop"
+                src="image/veg-loaded-pizza.jpg"
                 alt="Hot loaded special pizza fresh from the oven"
                 loading="lazy" width="800" height="600">
             </div>
             <span class="favourite-label">Fan favourite</span>
             <div class="favourite-content">
               <div>
-                <p>Fast Food</p>
-                <h3>Special Pizza</h3>
+                <p>Pizza</p>
+                <h3>Veg Loaded Special Pizza</h3>
               </div>
-              <button class="round-button" data-product-name="Special Pizza" aria-label="Order Special Pizza">
+              <button class="round-button" data-product-name="Veg Loaded Special Pizza" aria-label="Order Veg Loaded Special Pizza">
                 <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               </button>
             </div>
           </article>
 
           <article class="favourite-card reveal-ready" data-tilt>
-            <div class="media favourite-image" data-fallback="Cheese Burger">
+            <div class="media favourite-image" data-fallback="Cheese Aloo Tikki Burger">
               <img
                 src="image/Screenshot 2026-09-26 155417.png"
-                alt="Juicy cheese burger with melted cheese and fresh toppings"
+                alt="Crispy aloo tikki burger layered with melted cheese"
                 loading="lazy" width="800" height="600">
             </div>
             <span class="favourite-label">Must try</span>
             <div class="favourite-content">
               <div>
-                <p>Fast Food</p>
-                <h3>Cheese Burger</h3>
+                <p>Burgers</p>
+                <h3>Cheese Aloo Tikki Burger</h3>
               </div>
-              <button class="round-button" data-product-name="Cheese Burger" aria-label="Order Cheese Burger">
+              <button class="round-button" data-product-name="Cheese Aloo Tikki Burger" aria-label="Order Cheese Aloo Tikki Burger">
                 <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               </button>
             </div>
           </article>
 
           <article class="favourite-card reveal-ready" data-tilt>
-            <div class="media favourite-image" data-fallback="Chocolate Cake">
+            <div class="media favourite-image" data-fallback="Paneer Tikka Sandwich">
               <img
-                src="image/Screenshot 2026-09-26 221101.png"
-                alt="Rich decadent chocolate cake with frosting rosettes"
+                src="image/paneer-tikka-sandwich.jpg"
+                alt="Grilled sandwich filled with marinated paneer tikka chunks"
                 loading="lazy" width="800" height="600">
             </div>
-            <span class="favourite-label">Fresh daily</span>
+            <span class="favourite-label">Chef Special</span>
             <div class="favourite-content">
               <div>
-                <p>Bakery</p>
-                <h3>Chocolate Cake</h3>
+                <p>Sandwiches</p>
+                <h3>Paneer Tikka Sandwich</h3>
               </div>
-              <button class="round-button" data-product-name="Chocolate Cake" aria-label="Order Chocolate Cake">
+              <button class="round-button" data-product-name="Paneer Tikka Sandwich" aria-label="Order Paneer Tikka Sandwich">
                 <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               </button>
             </div>
           </article>
 
           <article class="favourite-card reveal-ready" data-tilt>
-            <div class="media favourite-image" data-fallback="Donuts">
+            <div class="media favourite-image" data-fallback="Aloo Samosa">
               <img
-                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&q=80&auto=format&fit=crop"
-                alt="Soft glazed café-style donuts"
+                src="image/aloo-samosa.jpg"
+                alt="Crispy golden samosa with spiced potato filling"
                 loading="lazy" width="800" height="600">
             </div>
-            <span class="favourite-label">Sweet pick</span>
+            <span class="favourite-label">Evening special</span>
             <div class="favourite-content">
               <div>
-                <p>Bakery</p>
-                <h3>Donuts</h3>
+                <p>Indian Snacks</p>
+                <h3>Aloo Samosa</h3>
               </div>
-              <button class="round-button" data-product-name="Donuts" aria-label="Order Donuts">
+              <button class="round-button" data-product-name="Aloo Samosa" aria-label="Order Aloo Samosa">
                 <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               </button>
             </div>
           </article>
 
           <article class="favourite-card reveal-ready" data-tilt>
-            <div class="media favourite-image" data-fallback="Peri-Peri Fries">
+            <div class="media favourite-image" data-fallback="Peri Peri Fries">
               <img
-                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=800&q=80&auto=format&fit=crop"
+                src="image/peri-peri-fries.jpg"
                 alt="Spicy peri-peri seasoned golden fries"
                 loading="lazy" width="800" height="600">
             </div>
             <span class="favourite-label">Spicy hit</span>
             <div class="favourite-content">
               <div>
-                <p>Fast Food</p>
-                <h3>Peri-Peri Fries</h3>
+                <p>Fries &amp; Sides</p>
+                <h3>Peri Peri Fries</h3>
               </div>
-              <button class="round-button" data-product-name="Peri-Peri Fries" aria-label="Order Peri-Peri Fries">
+              <button class="round-button" data-product-name="Peri Peri Fries" aria-label="Order Peri Peri Fries">
                 <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
               </button>
             </div>
@@ -1444,7 +1473,7 @@
               <svg class="icon"><use href="#icon-cake"/></svg>
             </div>
             <h3>Bakery &amp; Caf&eacute; Variety</h3>
-            <p>From fast food to baked cakes, cold coffee to chocolates — one café, every craving covered.</p>
+            <p>From gourmet burgers and loaded pizzas to hot samosas, Maggi, and chilled cold coffee — one café, every craving covered.</p>
           </div>
 
           <div class="feature-card reveal-ready">
@@ -1516,14 +1545,14 @@
           </figure>
 
           <figure class="gallery-item reveal-ready">
-            <div class="media" data-fallback="Fresh Donuts">
+            <div class="media" data-fallback="Aloo Samosa">
               <img
-                src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80&auto=format&fit=crop"
-                alt="Soft glazed donuts fresh from the bakery"
+                src="image/aloo-samosa.jpg"
+                alt="Crispy hot golden aloo samosa"
                 loading="lazy" width="600" height="400">
             </div>
             <figcaption>
-              <span>Donuts</span>
+              <span>Samosa</span>
               <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
             </figcaption>
           </figure>
@@ -1531,7 +1560,7 @@
           <figure class="gallery-item reveal-ready">
             <div class="media" data-fallback="Cold Coffee">
               <img
-                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&auto=format&fit=crop"
+                src="image/cold-coffee.jpg"
                 alt="Chilled cold coffee with cream swirl on top"
                 loading="lazy" width="600" height="400">
             </div>
@@ -1542,10 +1571,10 @@
           </figure>
 
           <figure class="gallery-item gallery-wide reveal-ready">
-            <div class="media" data-fallback="Special Pizza">
+            <div class="media" data-fallback="Veg Loaded Special Pizza">
               <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=900&q=80&auto=format&fit=crop"
-                alt="Hot loaded special pizza with melted cheese and toppings"
+                src="image/veg-loaded-pizza.jpg"
+                alt="Hot loaded special pizza with melted cheese and fresh toppings"
                 loading="lazy" width="900" height="400">
             </div>
             <figcaption>
@@ -1583,7 +1612,7 @@
           <figure class="gallery-item reveal-ready">
             <div class="media" data-fallback="Peri-Peri Fries">
               <img
-                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&q=80&auto=format&fit=crop"
+                src="image/peri-peri-fries.jpg"
                 alt="Crispy seasoned peri-peri fries"
                 loading="lazy" width="600" height="400">
             </div>

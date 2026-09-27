@@ -1049,6 +1049,22 @@ h3 {
   letter-spacing: 0.05em;
 }
 
+.product-size-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--chocolate);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+
 /* Blank / Coming Soon placeholder card for user uploads */
 .product-image-blank {
   background: linear-gradient(135deg, var(--beige), var(--blush));
